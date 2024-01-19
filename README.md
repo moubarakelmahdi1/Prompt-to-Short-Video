@@ -11,7 +11,7 @@ To set up the project on your local machine, follow these steps:
 1. Clone the repository to your local machine:
 
    ```sh
-   git clone ...
+   git clone https://github.com/moubarakelmahdi1/Prompt-to-Short-Video.git
    ```
 
 2. Navigate to the cloned repository directory:
