@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Générateur de Vidéo</title>
+  </head>
+  <body>
+    <h1>Générateur de Vidéo</h1>
+    <form id="videoForm">
+      <label for="title">Titre:</label><br />
+      <input type="text" id="title" name="title" /><br />
+      <label for="script">Script (format JSON):</label><br />
+      <textarea id="script" name="script" rows="10" cols="50"></textarea><br />
+      <input type="submit" value="Générer Vidéo" />
+    </form>
+
+    <div id="result" style="margin-top: 20px">
+      <!-- Le lien de téléchargement sera affiché ici -->
+    </div>
+
+    <script>
+      document.getElementById("videoForm").onsubmit = function (event) {
+        event.preventDefault();
+        var formData = new FormData(this);
+
+        fetch("/generate_video", {
+          method: "POST",
+          body: formData,
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            if (data.video_url) {
+              document.getElementById(
+                "result"
+              ).innerHTML = `<a href="${data.video_url}" download>Télécharger la vidéo</a>`;
+            } else {
+              document.getElementById("result").textContent =
+                "Erreur lors de la génération de la vidéo.";
+            }
+          });
+      };
+    </script>
+  </body>
+</html>
