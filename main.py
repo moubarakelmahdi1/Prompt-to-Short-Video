@@ -44,7 +44,7 @@ def generate_video(title, script):
     for item in script:
         logger.info(
             "Génération de la voix et de l'image pour un élément du script", item["prompt"])
-        audio_binary = generate_voice(item["paragraphe"])
+        audio_binary = generate_voice(item["description"])
         image_url = generate_image(item["prompt"])
 
         with NamedTemporaryFile(delete=False, suffix='.mp3') as audio_file:
