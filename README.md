@@ -60,6 +60,29 @@ Format of the JSON script :
   ]
 ```
 
+Example :
+
+```
+[
+   {
+      "paragraph": "Hey, trendsetters! Ever wonder why our phones are smarter than us in predicting our next move? Let's dive into the world of AI - it's not all about robots taking over!",
+      "prompt": "A vertical image of a playful, futuristic cityscape with whimsical robots interacting with young people, using tablets and smartphones. The robots are cartoon-like and friendly, embodying a positive vision of AI."
+   },
+   {
+      "paragraph": "Picture this: you're scrolling through TikTok, and boom! There's a video you didn't know you needed. That's AI, learning from your likes. Pretty cool, huh?",
+      "prompt": "A vertical image of a person's hand holding a smartphone, displaying a TikTok feed. The screen shows an AI icon analyzing the user's preferences, surrounded by a halo of various TikTok video thumbnails."
+   },
+   {
+      "paragraph": "But wait, it's not just about fun. AI helps in healthcare, making diagnoses faster. It's saving lives, guys, while we're saving TikTok videos!",
+      "prompt": "A vertical image showing a friendly robot assisting a doctor in a futuristic medical facility. The robot is displaying health data on a screen, while the doctor examines it attentively."
+   },
+   {
+      "paragraph": "So, next time your phone suggests that perfect song or a TikTok challenge, remember - there's a whole AI world behind it. Wanna know more about AI's cool side? Swipe up and follow for more!",
+      "prompt": "A vertical image of a smartphone displaying a colorful and dynamic graph representing AI's influence in various areas like music, social media, and healthcare, with a 'Swipe Up' arrow at the bottom."
+   }
+]
+```
+
 You can generate such scripts using automated GPT applications.
 
 You can use this prompt :
