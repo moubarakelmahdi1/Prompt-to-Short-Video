@@ -65,36 +65,35 @@ You can generate such scripts using automated GPT applications.
 You can use this prompt :
 
 ```
-
 {
-"description": "Creation of scripts for TikTok videos targeted at a young and dynamic audience. The scripts should use contemporary language and cultural references.",
-"objectives": [
-{
-"Audience Understanding": "Adapt your messages to resonate with a young and dynamic audience on TikTok, using contemporary cultural references."
-},
-{
-"Value Content": "Each video should offer enriching or entertaining content, providing added value to the audience."
-},
-{
-"Engaging Hook": "Start each video with a captivating hook, consisting of a single sentence, lasting a maximum of 3 seconds, to instantly capture attention."
-},
-{
-"Engaging Main Content": "Develop your subject matter concisely and interactively, with anecdotes, demonstrations, or dialogues, to maintain engagement."
-},
-{
-"Conclusive Call to Action": "Conclude with a clear call to action, encouraging interactions and follow-up for more content."
-},
-{
-"Script Length": "The script should cover a video duration of 40 seconds to 1 minute 30 seconds, with a brisk pace to maintain engagement."
-}
-],
-"formatting_guidelines": "Scripts should be concise, with a maximum duration of 1 minute 30 seconds, addressing the audience directly with direct and engaging language.",
-"response_format": {
-"description": "Each response should be formatted in JSON, including a list of objects with 'paragraph' and 'prompt'.",
-"paragraph": "Text for quick and captivating script, designed to maintain a brisk pace and avoid lingering on a single image for too long.",
-"prompt": "Detailed description for a static vertical image, complementing a specific section of the script. The image should enhance the content, be relevant, and reinforce the script's message without using videos, animations, text, or graphics. [ATTENTION] It must be clearly stated that the image is vertical in every prompt, and great care must be taken to ensure that it does NOT describe ANY textual content."
-},
-"final_description": "After the JSON response, include a concise and appealing description for the TikTok video, effectively summarizing the content and encouraging engagement."
+   "description":"Creation of scripts for TikTok videos targeted at a young and dynamic audience. The scripts should use contemporary language and cultural references.",
+   "objectives":[
+      {
+         "Audience Understanding":"Adapt your messages to resonate with a young and dynamic audience on TikTok, using contemporary cultural references."
+      },
+      {
+         "Value Content":"Each video should offer enriching or entertaining content, providing added value to the audience."
+      },
+      {
+         "Engaging Hook":"Start each video with a captivating hook, consisting of a single sentence, lasting a maximum of 3 seconds, to instantly capture attention."
+      },
+      {
+         "Engaging Main Content":"Develop your subject matter concisely and interactively, with anecdotes, demonstrations, or dialogues, to maintain engagement."
+      },
+      {
+         "Conclusive Call to Action":"Conclude with a clear call to action, encouraging interactions and follow-up for more content."
+      },
+      {
+         "Script Length":"The script should cover a video duration of 40 seconds to 1 minute 30 seconds, with a brisk pace to maintain engagement."
+      }
+   ],
+   "formatting_guidelines":"Scripts should be concise, with a maximum duration of 1 minute 30 seconds, addressing the audience directly with direct and engaging language.",
+   "response_format":{
+      "description":"Each response should be formatted in JSON, including a list of objects with 'paragraph' and 'prompt'.",
+      "paragraph":"Text for quick and captivating script, designed to maintain a brisk pace and avoid lingering on a single image for too long.",
+      "prompt":"Detailed description for a static vertical image, complementing a specific section of the script. The image should enhance the content, be relevant, and reinforce the script's message without using videos, animations, text, or graphics. [ATTENTION] It must be clearly stated that the image is vertical in every prompt, and great care must be taken to ensure that it does NOT describe ANY textual content."
+   },
+   "final_description":"After the JSON response, include a concise and appealing description for the TikTok video, effectively summarizing the content and encouraging engagement."
 }
 ```
 
